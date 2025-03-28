@@ -7,7 +7,6 @@ import numpy as np
 from model import entrenar_modelo_arima
 from src.preprocessing import crear_features
 
-
 # Cargar y procesar datos
 df = pd.read_csv('data/Proyecto_final.csv', parse_dates=['Mes'])
 df = crear_features(df)
@@ -118,4 +117,3 @@ def update_dashboard(producto, alpha):
 
 if __name__ == '__main__':
     app.run(debug=False)
-

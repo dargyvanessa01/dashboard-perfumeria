@@ -30,3 +30,6 @@ if __name__ == "__main__":
     df = cargar_datos(ruta_csv)
     df = crear_features(df)
     print(df.head())
+
+
+
