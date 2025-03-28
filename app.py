@@ -5,7 +5,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 from model import entrenar_modelo_arima
-from preprocessing import crear_features
+from src.preprocessing import crear_features
 
 
 # Cargar y procesar datos
