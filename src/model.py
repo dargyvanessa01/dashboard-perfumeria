@@ -33,10 +33,7 @@ def modelo_ridge(X, y):
 # Verificar estacionariedad de la serie temporal
 def verificar_estacionariedad(serie):
     resultado = adfuller(serie)
-    print(f"ADF Statistic: {resultado[0]}")
-    print(f"p-value: {resultado[1]}")
     if resultado[1] > 0.05:
-        print("La serie no es estacionaria. Aplicando diferenciación...")
         return serie.diff().dropna()
     else:
         print("La serie es estacionaria.")
